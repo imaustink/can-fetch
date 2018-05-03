@@ -1,0 +1,54 @@
+{
+  "name": "can-fetch",
+  "version": "0.0.0-alpha.0",
+  "description": "A modern and simplified alternative to can-connect",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imaustink/can-fetch.git"
+  },
+  "author": {
+    "name": "Austin Kurpuis",
+    "email": "austin@austinkurpuis.com",
+    "url": "https://www.austinkurpuis.com/"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "main": "fetch.js",
+  "steal": {
+    "directories": {
+      "lib": "lib"
+    },
+    "babelOptions": {
+      "plugins": [
+        "transform-decorators-legacy",
+        "transform-class-properties"
+      ]
+    }
+  },
+  "dependencies": {
+    "can-observe": "^2.1.0",
+    "can-param": "^1.0.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-jest": "^22.4.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "jest": "^22.4.3",
+    "regenerator-runtime": "^0.11.1",
+    "standard": "^11.0.1"
+  },
+  "license": "MIT",
+  "standard": {
+    "ignore": [],
+    "parser": "babel-eslint",
+    "env": {
+      "browser": true,
+      "jest": true
+    }
+  }
+}

@@ -16,11 +16,12 @@
   },
   "main": "fetch.js",
   "steal": {
-    "directories": {
-      "lib": "lib"
-    },
     "babelOptions": {
       "plugins": [
+        ["transform-runtime", {
+          "polyfill": false,
+          "regenerator": true
+        }],
         "transform-decorators-legacy",
         "transform-class-properties"
       ]
@@ -31,15 +32,12 @@
     "can-param": "^1.0.4"
   },
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-eslint": "^8.2.3",
-    "babel-jest": "^22.4.3",
+    "babel-runtime": "^6.26.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-decorators": "^6.24.1",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-stage-0": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
     "jest": "^22.4.3",
-    "regenerator-runtime": "^0.11.1",
     "standard": "^11.0.1"
   },
   "license": "MIT",
